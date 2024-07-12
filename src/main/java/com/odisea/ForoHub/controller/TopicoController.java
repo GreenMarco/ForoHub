@@ -1,6 +1,6 @@
 package com.odisea.ForoHub.controller;
 
-import com.odisea.ForoHub.topico.*;
+import com.odisea.ForoHub.domain.topico.*;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,7 +56,7 @@ public class TopicoController {
     @PutMapping("/{id}")
     @Transactional
     //ResponseEntity
-    public ResponseEntity<DatosRespuestaTopico> actualizaTopico(@RequestBody @Valid DatosActualizaTopico datosActualizaTopico,@PathVariable Long id){
+    public ResponseEntity<DatosRespuestaTopico> actualizaTopico(@RequestBody @Valid DatosActualizaTopico datosActualizaTopico, @PathVariable Long id){
         Topico topico = topicoRepository.getReferenceById(id);
         topico.actualizarDatos(datosActualizaTopico);
         var datosTopico = new DatosRespuestaTopico(topico.getId(), topico.getTitulo(),

@@ -1,4 +1,4 @@
-package com.odisea.ForoHub.topico;
+package com.odisea.ForoHub.domain.topico;
 
 import jakarta.validation.constraints.NotBlank;
 

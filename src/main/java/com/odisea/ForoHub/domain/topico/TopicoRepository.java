@@ -1,4 +1,4 @@
-package com.odisea.ForoHub.topico;
+package com.odisea.ForoHub.domain.topico;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ForoHub
+  datasource:
+    url: ${DBM_URL}
+    username: ${DBM_USER}
+    password: ${DBM_PASS}
+
+
+server:
+  error:
+    include-stacktrace: never
+
+api:
+  security:
+    secret: ${JWT_SECRET}

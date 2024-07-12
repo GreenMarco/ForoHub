@@ -1,4 +1,4 @@
-package com.odisea.ForoHub.topico;
+package com.odisea.ForoHub.domain.topico;
 
 import java.time.LocalDateTime;
 

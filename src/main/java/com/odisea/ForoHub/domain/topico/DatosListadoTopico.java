@@ -1,6 +1,4 @@
-package com.odisea.ForoHub.topico;
-
-import java.time.LocalDateTime;
+package com.odisea.ForoHub.domain.topico;
 
 public record DatosListadoTopico(Long id,
                                  String titulo,
